@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+  </style>
+  <title>Sunrise & Sunset Times</title>
+  <style>
+    .extension-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 375px;
+      height: 150px;
+    }
+
+    .schedules {
+      display: flex;
+      flex-direction: row;
+      background-image: url('SunriseCropped.jpg');
+      min-height: 100%;
+    }
+
+    .schedule-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+      background-color: transparent;
+    }
+
+    .icon {
+      font-size: 20px;
+    }
+
+    .title {
+      font-family: 'JetBrains Mono';
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .icon,
+    .title,
+    .time {
+      margin-top: 2px;
+      margin-bottom: 2px;
+      color: #FFFFFF;
+    }
+
+    .time {
+      font-size: 30px;
+    }
+
+    .button-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .loading-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('Sunrise.jpg');
+      min-height: 100px;
+      width: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="extension-container">
+    <div id="schedule" class="schedules hidden">
+      <div class="schedule-container">
+        <!-- <div class="icon">&#x1F307</div> -->
+        <div class="title">SUNSET TONIGHT</div>
+        <div class="time" id="sunsetTime">00:00</div>
+      </div>
+      <div class="schedule-container">
+        <!-- <div class="icon">&#x1F304</div> -->
+        <div class="title">SUNRISE TOMORROW</div>
+        <div class="time" id="sunriseTime">00:00</div>
+      </div>
+    </div>
+    <div id="loading-container" class="loading-container">
+      Loading...
+    </div>
+  </div>
+
+
+</body>
+<script src="popup.js"></script>
+
+</html>

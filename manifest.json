@@ -1,0 +1,15 @@
+{
+  "name": "Sunrise Extension",
+  "description": "Cole Styron & Chris Docuyanan (Codesmith Hackathon Entry)",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "geolocation"
+  ],
+  "browser_action": {
+      "default_title": "Check the sunset and sunrise times",
+      "default_icon": "sunicon.png",
+      "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
