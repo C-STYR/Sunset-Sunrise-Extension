@@ -1,6 +1,6 @@
 {
   "name": "Sunrise Extension",
-  "description": "Cole Styron & Chris Docuyanan (Codesmith Hackathon Entry)",
+  "description": "Gives the user sunrise/sunset times based on their geolocation",
   "version": "1.0",
   "permissions": [
     "activeTab",
